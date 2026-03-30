@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>外国人材紹介なら株式会社ひときわ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    *,::before,::after{box-sizing:border-box;border-style:solid;border-width:0}
+    html{line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;font-size:18px;font-family:"Noto Sans JP",sans-serif;color:#000;font-weight:500;line-height:1.5;scroll-behavior:smooth;}
+    body{margin:0;background:linear-gradient(to bottom,#ebf8f2,#eef9f2)}
+    main{display:block}
+    p,table,blockquote,address,pre,iframe,form,figure,dl{margin:0}
+    h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;margin:0}
+    ul,ol{margin:0;padding:0;list-style:none}
+    dt{font-weight:bold}
+    dd{margin-left:0}
+    hr{box-sizing:content-box;height:0;overflow:visible;border-top-width:1px;margin:0;clear:both;color:inherit}
+    a{background-color:transparent;text-decoration:none;color:inherit}
+    img{max-width:100%;height:auto}
+    .l-inner{max-width:1280px;margin:0 auto;padding:0 40px}
+    .l-section{position:relative}
+    .l-section__title{background:linear-gradient(to right,#0d8a50,#10AB66);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:60px;font-weight:900;line-height:1.53;text-align:center}
+    .l-section__heading{display:flex;align-items:center;gap:25px;border-bottom:4px solid #0d8a50;padding-bottom:15px}
+    .l-section__heading-ja{font-size:45px;font-weight:700;line-height:2.04;color:#0d8a50}
+    .l-section__heading-en{font-family:"Outfit",sans-serif;font-weight:500;font-size:25px;color:#F6D705}
+    .u-accent{color:#F6D705}
+    .u-sub_accent{color:#F6D705}
+    .u-bg-text{position:absolute;left:50%;transform:translateX(-50%);font-size:132px;font-family:"Outfit",sans-serif;font-weight:500;color:rgba(16,171,102,0.1);z-index:0;white-space:nowrap}
+    .u-underline{position:relative;display:inline-block}
+    .u-underline::after{content:"";position:absolute;left:0;right:0;bottom:11px;height:16px;background:linear-gradient(to right,#F6D705,#e6c700);z-index:-1}
+    .hero{position:relative;color:#fff;min-height:1200px;display:flex;flex-direction:column}
+    .hero__bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+    .hero__bg .hero-bg-placeholder{width:100%;height:100%;object-fit:cover}
+    .hero__header{position:absolute;top:36px;left:40px;z-index:2;height:50px}
+    .hero__inner{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 40px;width:100%}
+    .hero__body{padding-top:122px}
+    .hero__title{font-size:72px;font-weight:900;line-height:1.44}
+    .hero__subtitle{font-family:"Outfit",sans-serif;font-weight:500;margin-top:13px;font-size:20px}
+    .hero__text{margin-top:208px;font-size:25px;line-height:1.76}
+    .hero__features{display:flex;gap:28px;margin-top:40px}
+    .hero__feature-item{background-color:#fff;color:#000;border-radius:50%;width:230px;height:230px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px;box-shadow:0 0 26px 15px rgba(16,171,102,0.25) inset}
+    .hero__feature-number{font-family:"Outfit",sans-serif;font-size:50px;font-weight:500;color:#F6D705}
+    .hero__feature-text{font-size:25px;font-weight:700;margin-top:19px;line-height:1.4}
+    .hero__feature-accent{color:#0d8a50}
+    .hero__contact_btn{margin-top:40px;text-align:center}
+    .hero__problem{margin-top:80px;text-align:center}
+    .hero__problem-title{font-size:46px;font-weight:900;line-height:1.5}
+    .hero__problem-title-sub{display:inline-block;background-color:#fff;color:#000;padding:11px 60px 14px;font-size:28px;font-weight:700;line-height:1.25;border-radius:5px;margin-bottom:20px}
+    .hero__troubles{display:flex;gap:36px;margin-top:50px;justify-content:center}
+    .hero__trouble-item{background-color:#fff;color:#000;border-radius:20px;text-align:center;box-shadow:inset 0 0 0 7px #c9ffe0;padding:40px 20px 65px;flex:1;max-width:360px;display:flex;flex-direction:column}
+    .hero__trouble-label{font-family:"Outfit",sans-serif;font-weight:500;font-size:22px;color:#0d8a50;margin-bottom:15px}
+    .hero__trouble-title{font-size:28px;font-weight:700;line-height:1.25}
+    .hero__trouble-text{margin-top:19px;text-align:left;font-size:18px;line-height:1.67;padding:0 20px;flex-grow:1}
+    .photo-strip{position:relative;z-index:2;padding:0 30px;max-width:1860px;margin:80px auto 0;overflow:hidden}
+    .photo-strip__swiper{width:100%;height:400px;display:flex;align-items:center}
+    .swiper-wrapper{display:flex;animation:scroll 30s linear infinite;width:200%}
+    .swiper-slide{display:flex;align-items:center;justify-content:center;flex-shrink:0;min-width:calc(100% / 12)}
+    .swiper-slide .placeholder-img{width:260px;height:380px;border-radius:16px}
+    @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .scrolldown{position:absolute;top:782px;left:93px;z-index:2}
+    .scrolldown__text{position:absolute;left:0;top:0;color:#fff;writing-mode:vertical-rl;font-size:24px;font-family:"Outfit",sans-serif;font-weight:500}
+    .solve{padding-top:163px}
+    .solve__bg-text{top:-10px}
+    .solve__inner{position:relative;z-index:1}
+    .solve__title{position:relative;z-index:1}
+    .solve__data{display:flex;justify-content:center;gap:72px;margin-top:37px;position:relative;z-index:1}
+    .solve__data-item{display:flex;flex-direction:column;align-items:center}
+    .solve__data-label{font-size:28px;font-weight:700;line-height:1.25;padding:10px 37px 15px 36px;background:linear-gradient(to right,#0d8a50,#10AB66);color:#fff;border-radius:100px}
+    .solve__data-value{font-size:40px;font-weight:700;color:#F6D705;display:flex;align-items:baseline;gap:8px}
+    .solve__data-number{font-size:82px;font-weight:700;font-family:"Outfit",sans-serif}
+    .solve__points{display:grid;grid-template-columns:repeat(auto-fit,minmax(345px,1fr));gap:36px 32px;margin-top:52px;position:relative;z-index:1}
+    .solve__point-item{background-color:#fff;border:1px solid #86e8b8;border-radius:20px;box-shadow:0px -1px 12px 6px rgba(211,246,231,0.42);display:flex;flex-direction:column}
+    .solve__point-label{color:#fff;font-family:"Outfit",sans-serif;font-weight:500;font-size:25px;width:296px;height:45px;background:linear-gradient(to right,#0d8a50,#10AB66);padding:6px 0 0 29px;display:inline-block;clip-path:polygon(0 0,100% 0,86.5% 100%,0% 100%);margin-top:21px}
+    .solve__point-image{margin:27px auto 0;width:320px;height:200px;display:flex;align-items:center;justify-content:center}
+    .solve__point-image .placeholder-img{width:100%;height:100%;border-radius:10px}
+    .solve__point-title{margin-top:22px;font-size:28px;line-height:1.25;font-weight:700;text-align:center;padding:0 20px}
+    .solve__point-text{margin-top:17px;line-height:1.67;padding:0 20px 25px;flex-grow:1}
+    .support{margin-top:79px}
+    .support__inner{display:flex;justify-content:center;align-items:center;gap:65px;margin-left:62px;padding:0 40px}
+    .support__image{flex-shrink:0}
+    .support__image .placeholder-img{width:360px;height:300px}
+    .support__text{width:697px;font-size:28px;font-weight:700;line-height:1.79}
+    .all-support{text-align:center;padding-top:125px;padding-bottom:50px}
+    .all-support__inner{position:relative;z-index:1}
+    .all-support__text{font-size:28px;font-weight:700;line-height:1.79;margin-bottom:20px}
+    .vision{padding-top:191px;padding-bottom:88px}
+    .vision__bg-text{top:-10px}
+    .vision__inner{position:relative;z-index:1}
+    .vision__content{display:flex;gap:67px;margin-top:66px}
+    .vision__image{flex-shrink:0}
+    .vision__image .placeholder-img{max-width:450px;border-radius:10px;width:450px;height:500px}
+    .vision__text-area{flex:1}
+    .vision__text{font-size:20px;line-height:2.25}
+    .vision__ceo{margin-top:57px;margin-right:4px;font-size:22px;text-align:right}
+    .vision__list{display:grid;grid-template-columns:1fr;gap:39px;margin-top:85px}
+    .vision__item{background-color:#fff;border-radius:20px;padding:35px 32px;display:flex;align-items:center;gap:35px;font-size:28px;line-height:1.54;font-weight:700;box-shadow:inset 0 0 0 7px #c9ffe0;width:580px;margin:0 auto}
+    .vision__item-image{width:150px;height:150px;border-radius:50%;background:linear-gradient(to right,#0d8a50,#10AB66);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .customers-voice{position:relative;padding-top:88px;padding-bottom:105px;background:linear-gradient(to right,#0d8a50,#10AB66)}
+    .customers-voice__inner{position:relative;z-index:1}
+    .customers-voice .l-section__heading{border-bottom-color:#fff}
+    .customers-voice .l-section__heading-ja{color:#fff}
+    .customers-voice .l-section__heading-en{color:rgba(255,255,255,.7)}
+    .customers-voice__bg-text{color:rgba(255,255,255,.08)!important}
+    .customers-voice__list{margin-top:24px;display:grid;grid-template-columns:repeat(2,1fr);gap:39px}
+    .customers-voice__item{background-color:#fff;border-radius:20px;display:flex;flex-direction:column;overflow:hidden}
+    .customers-voice__image{height:220px;overflow:hidden}
+    .customers-voice__image .placeholder-img{width:100%;height:100%}
+    .customers-voice__text-area{padding:21px 33px 34px;flex-grow:1}
+    .customers-voice__name{font-size:28px;font-weight:700;line-height:1.54}
+    .customers-voice__label{padding-left:48px;position:relative}
+    .customers-voice__comment{margin-top:22px;padding-top:19px;border-top:1px solid #bababa;line-height:1.67}
+    .staff-intro{background-color:#fff;padding-top:76px;padding-bottom:102px}
+    .staff-intro__bg-text{top:-10px}
+    .staff-intro__inner{position:relative;z-index:1}
+    .staff-intro__list{margin-top:41px;display:flex;flex-direction:column;gap:23px}
+    .staff-intro__item{display:flex;gap:28px;align-items:center;background-color:#f0f8f4;padding:25px 27px 25px 25px;border-radius:20px}
+    .staff-intro__image{width:320px;flex-shrink:0;border-radius:10px;overflow:hidden}
+    .staff-intro__image .placeholder-img{width:100%;height:225px}
+    .staff-intro__content{flex:1}
+    .staff-intro__name{font-size:28px;font-weight:700;line-height:1.54}
+    .staff-intro__nationality{font-size:18px;font-weight:500;line-height:1.67;margin-left:10px;color:#10AB66}
+    .staff-intro__comment{margin-top:19px;padding-top:19px;border-top:1px solid #bababa;line-height:1.67}
+    .flow{padding-top:168px;padding-bottom:100px}
+    .flow__bg-text{top:-10px}
+    .flow__inner{position:relative;z-index:1}
+    .flow__title{position:relative;z-index:1}
+    .flow__list{margin-top:54px;display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:25px}
+    .flow__item{background-color:#fff;padding:24px 16px;border-radius:20px;text-align:center;position:relative;border:1px solid #86e8b8;box-shadow:0 -1px 12px 6px rgba(211,246,231,0.42);display:flex;flex-direction:column}
+    .flow__item-inner--step{display:flex;flex-direction:column;align-items:center}
+    .flow__step{color:#F6D705;font-family:"Outfit",sans-serif;font-weight:500;font-size:25px}
+    .flow__icon{width:100%;height:116px;display:flex;align-items:center;justify-content:center;margin-top:10px}
+    .flow__icon svg{width:70px;height:70px}
+    .flow__item-title{font-size:22px;font-weight:700;line-height:1.59;margin-top:15px}
+    .flow__text{margin-top:10px;font-size:16px;line-height:1.5;text-align:left;flex-grow:1}
+    .faq{padding-top:153px;padding-bottom:100px}
+    .faq__bg-text{top:-10px}
+    .faq__inner{position:relative;z-index:1}
+    .faq__list{margin-top:46px;display:flex;flex-direction:column;gap:15px;max-width:900px;margin-left:auto;margin-right:auto}
+    .faq__item{cursor:pointer}
+    .faq__question{border-radius:10px;background:#10AB66;padding:16px 80px 19px 32px;font-size:22px;line-height:1.59;font-weight:700;position:relative;color:#fff}
+    .faq__question::before{content:"Q. "}
+    .faq__question::after{content:"";position:absolute;right:31px;top:24px;width:22px;height:22px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Cline x1='11' y1='0' x2='11' y2='22' stroke='white' stroke-width='3'/%3E%3Cline x1='0' y1='11' x2='22' y2='11' stroke='white' stroke-width='3'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:center;background-size:contain;transition:all 0.3s ease}
+    .faq__answer{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
+    .faq__answer-inner{padding:30px 32px 10px 32px;background-color:#f0f8f4;border-radius:0 0 10px 10px}
+    .faq__answer-inner::before{content:"A. ";font-weight:700;color:#10AB66}
+    .faq__item.is-open .faq__question::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Cline x1='0' y1='11' x2='22' y2='11' stroke='white' stroke-width='3'/%3E%3C/svg%3E")}
+    .company{padding-top:52px;padding-bottom:91px}
+    .company__bg-text{top:-10px}
+    .company__inner{position:relative;z-index:1}
+    .company__list{margin-top:40px;max-width:600px;margin-left:auto;margin-right:auto}
+    .company__item{display:flex;border-bottom:1px solid #a6a6a6}
+    .company__item-title{width:221px;padding:14px 0;font-weight:700}
+    .company__item-data{padding:14px;flex:1}
+    .message{padding-top:56px;padding-bottom:69px;background-color:#fff}
+    .message__inner{position:relative;z-index:1}
+    .message__text{margin-top:28px;font-size:20px;line-height:2.25}
+    .final-cta{padding-top:151px;padding-bottom:102px}
+    .final-cta__inner{position:relative;z-index:1}
+    .contact{padding-top:50px;padding-bottom:85px;background:linear-gradient(to right,rgba(13,138,80,0.75),rgba(16,171,102,0.75));position:relative}
+    .contact__inner{position:relative;z-index:1}
+    .contact__bg-text{color:rgba(255,255,255,.08)!important}
+    .contact__title{font-size:41px;font-weight:700;line-height:2.24;color:#fff;text-align:center}
+    .contact__box{max-width:980px;margin:0 auto;margin-top:53px;background-color:#fff;border-radius:10px;padding:25px;display:grid;grid-template-columns:repeat(2,1fr);box-shadow:0 26px 9px 0 rgba(13,41,57,0.5)}
+    .contact__phone{border-right:1px solid #a6a6a6;text-align:center;padding:20px}
+    .contact__phone-label{margin-top:14px;font-size:27px;line-height:1.3;color:#0d8a50}
+    .contact__phone-number{font-size:50px;font-weight:500;color:#132939;font-family:"Outfit",sans-serif;display:flex;align-items:center;justify-content:center;margin-top:9px}
+    .contact__phone-note{font-size:14px;color:#666;margin-top:10px}
+    .contact__mail{text-align:center;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+    .contact__mail-label{font-size:22px;font-weight:700;color:#132939}
+    .contact__mail-button{display:inline-block;background:linear-gradient(to right,#F6D705,#e6c700);color:#132939;padding:16px 63px;border-radius:100px;font-size:22px;font-weight:700;margin-top:6px;transition:opacity 0.3s}
+    .contact__mail-button:hover{opacity:0.85}
+    .seeker_link_txt{display:inline-block;margin-top:20px;font-size:16px;padding:8px 18px;border-radius:2em;background:rgba(255,255,255,0.2);color:#fff;transition:all .12s}
+    .seeker_link_txt:hover{background:rgba(255,255,255,0.35)}
+    .contact__note{color:rgba(255,255,255,.7);font-size:14px;text-align:center;margin-top:10px}
+    .footer{padding:16px 0 14px;text-align:center;background-color:#132939}
+    .footer__copyright{font-size:16px;line-height:1.875;color:#fff}
+    .placeholder-img{background:linear-gradient(135deg,#0d8a50,#10AB66);color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;text-align:center;padding:10px}
+    .hero-bg-placeholder{background:linear-gradient(135deg,#132939 0%,#0d8a50 50%,#10AB66 100%);width:100%;height:100%}
+    @media(max-width:768px){
+      .l-inner{padding:0 6.67vw}
+      .hero__inner{padding:0 6.67vw}
+      .hero__header{left:6.67vw}
+      .hero__body{padding-top:80px}
+      .hero__title{font-size:9.33vw}
+      .hero__text{margin-top:40px;font-size:4.27vw}
+      .hero__features{flex-direction:column;align-items:center;gap:20px}
+      .hero__feature-item{width:53.33vw;height:53.33vw;max-width:300px;max-height:300px}
+      .hero__troubles{flex-direction:column;align-items:center;gap:20px}
+      .hero__trouble-item{width:100%;padding:30px 15px 50px}
+      .photo-strip{padding:0 4vw}
+      .scrolldown{display:none}
+      .l-section__title{font-size:9.33vw}
+      .l-section__heading{flex-direction:column;align-items:flex-start;gap:10px}
+      .solve{padding-top:80px}
+      .solve__data{flex-direction:column;gap:20px}
+      .solve__points{grid-template-columns:1fr}
+      .support__inner{flex-direction:column;margin-left:0;gap:30px;padding:0 6.67vw}
+      .support__text{width:100%;font-size:5.33vw}
+      .vision__content{flex-direction:column;gap:30px}
+      .vision__image .placeholder-img{max-width:100%;width:100%;height:auto}
+      .vision__item{width:100%;flex-direction:column;text-align:center}
+      .customers-voice__list{grid-template-columns:1fr}
+      .staff-intro__item{flex-direction:column;gap:15px}
+      .staff-intro__image{width:100%}
+      .flow__list{grid-template-columns:repeat(2,1fr)}
+      .faq__list{margin:0 6.67vw}
+      .contact__box{grid-template-columns:1fr}
+      .contact__phone{border-right:none;border-bottom:1px solid #a6a6a6}
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero__bg"><div class="hero-bg-placeholder"></div></div>
+      <div class="hero__header"><svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg"><text x="10" y="40" font-size="36" font-weight="700" fill="#fff" font-family="Noto Sans JP">ひときわ</text></svg></div>
+      <div class="hero__inner">
+        <p class="hero__bg-text u-bg-text">TALENT<br>SOLUTION</p>
+        <div class="hero__body">
+          <h1 class="hero__title"><span class="u-underline">外国人材紹介で</span><br><span class="u-underline">「あらゆる業種」の</span><br><span class="u-underline">人材不足課題を解決</span></h1>
+          <p class="hero__subtitle">Recruitment and introduction of foreign workers.</p>
+          <p class="hero__text">「人手不足」「コミュニケーションの難しさ」<br>「外国人スタッフの管理」<br><span class="u-sub_accent">— その課題、ヒトキワがまるごと解決します。</span></p>
+          <ul class="hero__features">
+            <li class="hero__feature-item"><span class="hero__feature-number">01</span><p class="hero__feature-text">面倒な<br><span class="hero__feature-accent">手続き不要</span></p></li>
+            <li class="hero__feature-item"><span class="hero__feature-number">02</span><p class="hero__feature-text">外国人材紹介<br><span class="hero__feature-accent">豊富な実績</span></p></li>
+            <li class="hero__feature-item"><span class="hero__feature-number">03</span><p class="hero__feature-text"><span class="hero__feature-accent">独自の</span><br><span class="hero__feature-accent">ネットワーク</span>に<br>よる人材確保</p></li>
+          </ul>
+        </div>
+        <div class="hero__contact_btn"><a href="#contact" class="contact__mail-button">企業様向けお問い合わせ</a></div>
+        <div class="hero__problem">
+          <h2 class="hero__problem-title"><span class="hero__problem-title-sub">あらゆる業種の皆様</span>こんなお悩みありませんか</h2>
+          <ul class="hero__troubles">
+            <li class="hero__trouble-item"><p class="hero__trouble-label">TROUBLE 01</p><h3 class="hero__trouble-title">働き手の<span class="u-underline">確保が困難</span></h3><p class="hero__trouble-text">求人募集をしても、なかなかうまく集まらなくて、採用コストの負担が大きい</p></li>
+            <li class="hero__trouble-item"><p class="hero__trouble-label">TROUBLE 02</p><h3 class="hero__trouble-title">人材の<span class="u-underline">定着率が低い</span></h3><p class="hero__trouble-text">教育したスタッフがすぐにやめたり、業務自体に支障が出て、事業拡大ができない</p></li>
+            <li class="hero__trouble-item"><p class="hero__trouble-label">TROUBLE 03</p><h3 class="hero__trouble-title">外国人材雇用<span class="u-underline">経験がない</span></h3><p class="hero__trouble-text">外国人材雇用、管理方法の知識、環境が揃っていないため、雇用に不安がある</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="photo-strip">
+        <div class="photo-strip__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">1</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">2</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">3</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">4</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">5</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">6</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">7</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">8</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">9</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">10</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">11</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">12</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">1</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">2</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">3</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">4</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">5</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">6</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">7</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">8</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">9</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">10</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">11</div></div>
+            <div class="swiper-slide"><div class="placeholder-img" style="width:260px;height:380px;">12</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="scrolldown"><span class="scrolldown__text">SCROLL</span></div>
+    </section>
+    
+    <section class="solve l-section" id="solve">
+      <div class="solve__inner l-inner">
+        <p class="solve__bg-text u-bg-text">SOLVE</p>
+        <h2 class="solve__title l-section__title">ヒトキワなら外国人材を<br><span class="u-underline">安心して活用でき</span><br><span class="u-underline">生産性を向上できます</span></h2>
+        <ul class="solve__data">
+          <li class="solve__data-item"><span class="solve__data-label">登録者数</span><span class="solve__data-value"><span class="solve__data-number">5,000</span>名超</span></li>
+          <li class="solve__data-item"><span class="solve__data-label">紹介実績</span><span class="solve__data-value"><span class="solve__data-number">800</span>社以上</span></li>
+        </ul>
+        <ul class="solve__points">
+          <li class="solve__point-item"><p class="solve__point-label">POINT 01</p><div class="solve__point-image"><div class="placeholder-img">📋</div></div><h3 class="solve__point-title">ビザ手続き<span class="u-underline">完全サポート</span></h3><p class="solve__point-text">在留資格の申請から更新まで、煩雑な手続きをすべて代行。</p></li>
+          <li class="solve__point-item"><p class="solve__point-label">POINT 02</p><div class="solve__point-image"><div class="placeholder-img">🤝</div></div><h3 class="solve__point-title">定着率<span class="u-underline">90%超え</span></h3><p class="solve__point-text">多言語対応スタッフが手厚くフォロー。高い定着率を実現。</p></li>
+          <li class="solve__point-item"><p class="solve__point-label">POINT 03</p><div class="solve__point-image"><div class="placeholder-img">📚</div></div><h3 class="solve__point-title"><span class="u-underline">技術教育・資格支援</span></h3><p class="solve__point-text">各種資格取得をサポート。資格保持者を多数ご紹介。</p></li>
+          <li class="solve__point-item"><p class="solve__point-label">POINT 04</p><div class="solve__point-image"><div class="placeholder-img">🏭</div></div><h3 class="solve__point-title"><span class="u-underline">幅広い業種への</span>紹介実績</h3><p class="solve__point-text">製造業・建設業・介護・飲食業など幅広い業種に対応。</p></li>
+          <li class="solve__point-item"><p class="solve__point-label">POINT 05</p><div class="solve__point-image"><div class="placeholder-img">🌐</div></div><h3 class="solve__point-title">外国人材との<span class="u-underline">コミュニケーション</span></h3><p class="solve__point-text">通訳・翻訳対応で業務遂行をサポート。</p></li>
+          <li class="solve__point-item"><p class="solve__point-label">POINT 06</p><div class="solve__point-image"><div class="placeholder-img">⚡</div></div><h3 class="solve__point-title"><span class="u-underline">迅速な人材紹介</span></h3><p class="solve__point-text">独自ネットワークで最短2週間での紹介が可能。</p></li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="support">
+      <div class="support__inner">
+        <div class="support__image"><div class="placeholder-img" style="width:360px;height:300px;">📋</div></div>
+        <p class="support__text">在留資格の取得・更新、生活支援もすべて弊社が対応。<br>本人の代わりにおこなう<span class="u-accent">【申請等取次者証明書】</span>を持つスタッフがおりますので、<br>在留資格外活動にならないよう、<br><span class="u-accent">安心して外国人材の受け入れができます。</span></p>
+      </div>
+    </section>
+    
+    <section class="all-support l-section">
+      <div class="all-support__inner l-inner">
+        <p class="all-support__text">採用から給与計算等含む労務管理は<br><span class="u-underline">すべて弊社に</span><br><span class="u-underline">お任せいただけます。</span></p>
+        <a href="#contact" class="contact__mail-button">企業様向けお問い合わせ</a>
+      </div>
+    </section>
+    
+    <section class="vision l-section">
+      <div class="vision__inner l-inner">
+        <p class="vision__bg-text u-bg-text">VISION</p>
+        <div class="l-section__heading">
+          <h2 class="l-section__heading-ja">ヒトキワの思い</h2>
+          <p class="l-section__heading-en">VISION</p>
+        </div>
+        <div class="vision__content">
+          <div class="vision__image"><div class="placeholder-img" style="width:450px;height:500px;border-radius:10px;">代表</div></div>
+          <div class="vision__text-area">
+            <p class="vision__text">日本の企業が持つ可能性を最大限に引き出すために、世界中の優秀な人材と企業をつなぐ。それがヒトキワの使命です。<br><br>言語や文化の壁を取り払い、企業と外国人材が共に成長できる環境を創造することで、外国人材が日本で安心して働き、企業が必要とする人材を確保できる社会を実現します。</p>
+            <p class="vision__ceo">代表取締役　金子</p>
+          </div>
+        </div>
+        <ul class="vision__list">
+          <li class="vision__item">
+            <div class="vision__item-image"><svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="30" fill="#fff"/></svg></div>
+            <p>有期雇用から正社員まで<br><span>幅広く対応</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="customers-voice l-section">
+      <div class="customers-voice__inner l-inner">
+        <p class="customers-voice__bg-text u-bg-text">RESULTS</p>
+        <div class="l-section__heading">
+          <span class="l-section__heading-ja">導入企業の声／事例</span>
+          <span class="l-section__heading-en">RESULTS</span>
+        </div>
+        <ul class="customers-voice__list">
+          <li class="customers-voice__item">
+            <div class="customers-voice__image"><div class="placeholder-img">製造業</div></div>
+            <div class="customers-voice__text-area">
+              <p class="customers-voice__name"><span class="customers-voice__label">大手製造業様</span></p>
+              <p class="customers-voice__comment">ヒトキワにお願いして、外国人スタッフがすぐに職場に馴染んでくれました。言語サポートも充実しており、コミュニケーションの課題も解消されました。</p>
+            </div>
+          </li>
+          <li class="customers-voice__item">
+            <div class="customers-voice__image"><div class="placeholder-img">建設業</div></div>
+            <div class="customers-voice__text-area">
+              <p class="customers-voice__name"><span class="customers-voice__label">建設資材製造業様</span></p>
+              <p class="customers-voice__comment">人手不足の課題と技術スキルのある外国人材を求めていました。実際にスキルがありすぐに対応できる人材を紹介いただき感激しました。</p>
+            </div>
+          </li>
+          <li class="customers-voice__item">
+            <div class="customers-voice__image"><div class="placeholder-img">介護</div></div>
+            <div class="customers-voice__text-area">
+              <p class="customers-voice__name"><span class="customers-voice__label">介護施設様</span></p>
+              <p class="customers-voice__comment">外国人材の方が一生懸命で、利用者様からの評判も良く、今後も活用したいと考えております。</p>
+            </div>
+          </li>
+          <li class="customers-voice__item">
+            <div class="customers-voice__image"><div class="placeholder-img">飲食業</div></div>
+            <div class="customers-voice__text-area">
+              <p class="customers-voice__name"><span class="customers-voice__label">飲食チェーン様</span></p>
+              <p class="customers-voice__comment">文化の違いがあり最初は戸惑いましたが、一生懸命頑張り、スタッフの対応が良いと感じました。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="staff-intro l-section">
+      <div class="staff-intro__inner l-inner">
+        <p class="staff-intro__bg-text u-bg-text">STAFF</p>
+        <div class="l-section__heading">
+          <span class="l-section__heading-ja">対応スタッフの紹介</span>
+          <span class="l-section__heading-en">STAFF INTERVIEW</span>
+        </div>
+        <ul class="staff-intro__list">
+          <li class="staff-intro__item">
+            <div class="staff-intro__image"><div class="placeholder-img">写真</div></div>
+            <div class="staff-intro__content">
+              <h3 class="staff-intro__name">田中 太郎さん<span class="staff-intro__nationality">日本人</span></h3>
+              <p class="staff-intro__comment">「ありがとう」と言ってもらえる瞬間が一番のやりがいです。誠意をもって対応することを心がけています。</p>
+            </div>
+          </li>
+          <li class="staff-intro__item">
+            <div class="staff-intro__image"><div class="placeholder-img">写真</div></div>
+            <div class="staff-intro__content">
+              <h3 class="staff-intro__name">グエン・ティ・ランさん<span class="staff-intro__nationality">ベトナム人</span></h3>
+              <p class="staff-intro__comment">日本で暮らした経験を活かし、出稼ぎで来日した方々をサポートしたいと思っています。</p>
+            </div>
+          </li>
+          <li class="staff-intro__item">
+            <div class="staff-intro__image"><div class="placeholder-img">写真</div></div>
+            <div class="staff-intro__content">
+              <h3 class="staff-intro__name">リン・アウンさん<span class="staff-intro__nationality">ミャンマー人</span></h3>
+              <p class="staff-intro__comment">言葉の壁を越えて、笑顔で話してくれる瞬間が一番嬉しいです。</p>
+            </div>
+          </li>
+          <li class="staff-intro__item">
+            <div class="staff-intro__image"><div class="placeholder-img">写真</div></div>
+            <div class="staff-intro__content">
+              <h3 class="staff-intro__name">マリア・サントスさん<span class="staff-intro__nationality">フィリピン人</span></h3>
+              <p class="staff-intro__comment">さまざまな人と関わり、文化や考え方を知れるのがこの仕事の魅力です。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="flow l-section">
+      <div class="flow__inner l-inner">
+        <p class="flow__bg-text u-bg-text">FLOW</p>
+        <h2 class="flow__title l-section__title">外国人材紹介<br>導入までの流れ</h2>
+        <ol class="flow__list">
+          <li class="flow__item"><div class="flow__item-inner flow__item-inner--step"><p class="flow__step">STEP 01</p><div class="flow__icon"><svg viewBox="0 0 70 70"><circle cx="35" cy="35" r="30" fill="none" stroke="#0d8a50" stroke-width="2"/></svg></div></div><div class="flow__item-inner"><h3 class="flow__item-title">お問い合わせ</h3><p class="flow__text">まずはお気軽にご相談ください。</p></div></li>
+          <li class="flow__item"><div class="flow__item-inner flow__item-inner--step"><p class="flow__step">STEP 02</p><div class="flow__icon"><svg viewBox="0 0 70 70"><circle cx="35" cy="35" r="30" fill="none" stroke="#0d8a50" stroke-width="2"/></svg></div></div><div class="flow__item-inner"><h3 class="flow__item-title">ヒアリング</h3><p class="flow__text">御社のニーズを詳しくお聞きします。</p></div></li>
+          <li class="flow__item"><div class="flow__item-inner flow__item-inner--step"><p class="flow__step">STEP 03</p><div class="flow__icon"><svg viewBox="0 0 70 70"><circle cx="35" cy="35" r="30" fill="none" stroke="#0d8a50" stroke-width="2"/></svg></div></div><div class="flow__item-inner"><h3 class="flow__item-title">人材選定</h3><p class="flow__text">適切な人材を厳選いたします。</p></div></li>
+          <li class="flow__item"><div class="flow__item-inner flow__item-inner--step"><p class="flow__step">STEP 04</p><div class="flow__icon"><svg viewBox="0 0 70 70"><circle cx="35" cy="35" r="30" fill="none" stroke="#0d8a50" stroke-width="2"/></svg></div></div><div class="flow__item-inner"><h3 class="flow__item-title">面接</h3><p class="flow__text">オンラインまたは対面で実施します。</p></div></li>
+          <li class="flow__item"><div class="flow__item-inner flow__item-inner--step"><p class="flow__step">STEP 05</p><div class="flow__icon"><svg viewBox="0 0 70 70"><circle cx="35" cy="35" r="30" fill="none" stroke="#0d8a50" stroke-width="2"/></svg></div></div><div class="flow__item-inner"><h3 class="flow__item-title">契約</h3><p class="flow__text">ご契約内容を確認いただきます。</p></div></li>
+          <li class="flow__item"><div class="flow__item-inner flow__item-inner--step"><p class="flow__step">STEP 06</p><div class="flow__icon"><svg viewBox="0 0 70 70"><circle cx="35" cy="35" r="30" fill="none" stroke="#0d8a50" stroke-width="2"/></svg></div></div><div class="flow__item-inner"><h3 class="flow__item-title">開始</h3><p class="flow__text">業務開始。継続サポートいたします。</p></div></li>
+        </ol>
+      </div>
+    </section>
+    
+    <section class="faq l-section">
+      <div class="faq__inner l-inner">
+        <p class="faq__bg-text u-bg-text">FAQ</p>
+        <h2 class="faq__title l-section__title">よくあるご質問</h2>
+        <dl class="faq__list">
+          <div class="faq__item"><dt class="faq__question">紹介から入社までどのくらいで対応可能ですか？</dt><dd class="faq__answer"><div class="faq__answer-inner">職種・エリア・条件によりますが、最短2週間程度での紹介開始が可能です。</div></dd></div>
+          <div class="faq__item"><dt class="faq__question">紹介手数料について</dt><dd class="faq__answer"><div class="faq__answer-inner">職種、業務内容、必要スキルに応じて料金が変わります。お気軽にお問い合わせください。</div></dd></div>
+          <div class="faq__item"><dt class="faq__question">対応エリアについて</dt><dd class="faq__answer"><div class="faq__answer-inner">全国どこでも対応させていただきます。離島など特殊な地域はご相談ください。</div></dd></div>
+          <div class="faq__item"><dt class="faq__question">紹介できない職種はありますか？</dt><dd class="faq__answer"><div class="faq__answer-inner">業種によって制限がある場合がございます。詳しくはお問い合わせください。</div></dd></div>
+          <div class="faq__item"><dt class="faq__question">パートタイムでの紹介は可能ですか？</dt><dd class="faq__answer"><div class="faq__answer-inner">はい、可能です。業務の繁閑に合わせて必要な時期だけご利用いただけます。</div></dd></div>
+          <div class="faq__item"><dt class="faq__question">外国人材との面接について</dt><dd class="faq__answer"><div class="faq__answer-inner">事前にオンラインまたは対面での面接をセッティングいたします。言語対応スタッフも同席させていただきます。</div></dd></div>
+          <div class="faq__item"><dt class="faq__question">紹介した人材を直接雇用することは可能か</dt><dd class="faq__answer"><div class="faq__answer-inner">一定期間後、三者合意の元、直接雇用への切り替えが可能です。</div></dd></div>
+          <div class="faq__item"><dt class="faq__question">短期での紹介は可能ですか？</dt><dd class="faq__answer"><div class="faq__answer-inner">ご契約内容により柔軟に対応いたします。季節労働などもお気軽にご相談ください。</div></dd></div>
+          <div class="faq__item"><dt class="faq__question">外国人材の日本語能力について</dt><dd class="faq__answer"><div class="faq__answer-inner">基本的に業務上意思疎通が可能な人材をご提案します。職種にあった日本語レベルの人材を選定します。</div></dd></div>
+          <div class="faq__item"><dt class="faq__question">外国人スタッフとのコミュニケーションに不安があるのですが</dt><dd class="faq__answer"><div class="faq__answer-inner">弊社の母国語対応スタッフが立ち合いをさせていただくことにより、コミュニケーションを円滑にすることができます。</div></dd></div>
+        </dl>
+      </div>
+    </section>
+    
+    <section class="company l-section">
+      <div class="company__inner l-inner">
+        <p class="company__bg-text u-bg-text">COMPANY</p>
+        <div class="l-section__heading">
+          <span class="l-section__heading-ja">会社概要</span>
+          <span class="l-section__heading-en">COMPANY</span>
+        </div>
+        <dl class="company__list">
+          <div class="company__item"><dt class="company__item-title">会社名</dt><dd class="company__item-data">株式会社ひときわ</dd></div>
+          <div class="company__item"><dt class="company__item-title">代表取締役</dt><dd class="company__item-data">金子</dd></div>
+          <div class="company__item"><dt class="company__item-title">設立年</dt><dd class="company__item-data">2018年</dd></div>
+          <div class="company__item"><dt class="company__item-title">事業内容</dt><dd class="company__item-data">外国人材紹介・斡旋、労務管理支援</dd></div>
+          <div class="company__item"><dt class="company__item-title">登録者数</dt><dd class="company__item-data">5,000名超</dd></div>
+          <div class="company__item"><dt class="company__item-title">紹介実績</dt><dd class="company__item-data">800社以上</dd></div>
+        </dl>
+      </div>
+    </section>
+    
+    <section class="message l-section">
+      <div class="message__inner l-inner">
+        <div class="l-section__heading">
+          <span class="l-section__heading-ja">メッセージ</span>
+          <span class="l-section__heading-en">MESSAGE</span>
+        </div>
+        <p class="message__text">弊社は外国人材紹介を手掛けております。日本国内の人手不足課題に直面する企業様と、日本で働きたいという意欲ある外国人材をつなぐことで、双方にとってウィン・ウィンの関係を築いています。5,000名を超える登録者と800社以上の紹介実績を誇り、多様な業種・職種での人材紹介を行っています。ビザ手続きから日々のサポートまで、企業様が安心して外国人材を活用できるよう、全力でバックアップいたします。</p>
+      </div>
+    </section>
+    
+    <section class="final-cta l-section">
+      <div class="final-cta__inner l-inner">
+        <p class="final-cta__bg-text u-bg-text">ALL SUPPORT</p>
+        <h2 class="final-cta__title l-section__title"><span class="u-underline">貴社の課題、</span><br><span class="u-underline">外国人材で解決できます！</span></h2>
+      </div>
+    </section>
+    
+    <section class="contact l-section" id="contact">
+      <div class="contact__inner l-inner">
+        <p class="contact__bg-text u-bg-text">CONTACT</p>
+        <h2 class="contact__title l-section__title">外国人材紹介のお問い合わせはこちら</h2>
+        <div class="contact__box">
+          <div class="contact__phone">
+            <p class="contact__phone-label">お急ぎの方はお電話ください</p>
+            <a href="tel:00000000000" class="contact__phone-number">000-0000-0000</a>
+            <p class="contact__phone-note">受付時間: 平日 10:00〜18:00</p>
+          </div>
+          <div class="contact__mail">
+            <p class="contact__mail-label">メールでかんたん</p>
+            <a href="mailto:info@hito-kiwa.co.jp" class="contact__mail-button">企業様向けお問い合わせ</a>
+          </div>
+        </div>
+        <a href="#" class="seeker_link_txt">求職者の方はこちら</a>
+        <p class="contact__note">24時間受付中</p>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <p class="footer__copyright">©2025 株式会社ひときわ</p>
+  </footer>
+  
+  <script>
+    document.querySelectorAll('.faq__item').forEach(item => {
+      const question = item.querySelector('.faq__question');
+      const answer = item.querySelector('.faq__answer');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('is-open');
+        document.querySelectorAll('.faq__item').forEach(other => {
+          if (other !== item) {
+            other.classList.remove('is-open');
+            other.querySelector('.faq__answer').style.maxHeight = '0';
+          }
+        });
+        if (isOpen) {
+          item.classList.remove('is-open');
+          answer.style.maxHeight = '0';
+        } else {
+          item.classList.add('is-open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && document.querySelector(href)) {
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
