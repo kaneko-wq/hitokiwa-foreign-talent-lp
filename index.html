@@ -8,7 +8,7 @@
   <style>
     *,::before,::after{box-sizing:border-box;border-style:solid;border-width:0}
     html{line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;font-size:18px;font-family:"Noto Sans JP",sans-serif;color:#000;font-weight:500;line-height:1.5;scroll-behavior:smooth;}
-    body{margin:0;background:linear-gradient(to bottom,#ebf8f2,#eef9f2)}
+    body{margin:0;background:linear-gradient(to bottom,#e0f2ea,#e8f5ee)}
     main{display:block}
     p,table,blockquote,address,pre,iframe,form,figure,dl{margin:0}
     h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;margin:0}
@@ -26,18 +26,18 @@
     .l-section__heading-en{font-family:"Outfit",sans-serif;font-weight:500;font-size:25px;color:#F6D705}
     .u-accent{color:#F6D705}
     .u-sub_accent{color:#F6D705}
-    .u-bg-text{position:absolute;left:50%;transform:translateX(-50%);font-size:132px;font-family:"Outfit",sans-serif;font-weight:500;color:rgba(16,171,102,0.1);z-index:0;white-space:nowrap}
+    .u-bg-text{position:absolute;left:50%;transform:translateX(-50%);font-size:132px;font-family:"Outfit",sans-serif;font-weight:500;color:rgba(16,171,102,0.08);z-index:0;white-space:nowrap}
     .u-underline{position:relative;display:inline-block}
     .u-underline::after{content:"";position:absolute;left:0;right:0;bottom:11px;height:16px;background:linear-gradient(to right,#F6D705,#e6c700);z-index:-1}
     .hero{position:relative;color:#fff;min-height:1200px;display:flex;flex-direction:column}
     .hero__bg{position:absolute;inset:0;z-index:0;overflow:hidden}
-    .hero__bg .hero-bg-placeholder{width:100%;height:100%;object-fit:cover}
+    .hero__bg .hero-bg-placeholder{width:100%;height:100%;object-fit:cover;background:linear-gradient(135deg, #064d2e 0%, #0a6b3f 25%, #10AB66 50%, #0d8a50 75%, #08503a 100%)}
     .hero__header{position:absolute;top:36px;left:40px;z-index:2;height:50px}
     .hero__inner{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 40px;width:100%}
     .hero__body{padding-top:122px}
-    .hero__title{font-size:72px;font-weight:900;line-height:1.44}
+    .hero__title{font-size:72px;font-weight:900;line-height:1.44;text-shadow:0 2px 12px rgba(0,0,0,0.25)}
     .hero__subtitle{font-family:"Outfit",sans-serif;font-weight:500;margin-top:13px;font-size:20px}
-    .hero__text{margin-top:208px;font-size:25px;line-height:1.76}
+    .hero__text{margin-top:208px;font-size:25px;line-height:1.76;text-shadow:0 2px 8px rgba(0,0,0,0.3)}
     .hero__features{display:flex;gap:28px;margin-top:40px}
     .hero__feature-item{background-color:#fff;color:#000;border-radius:50%;width:230px;height:230px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px;box-shadow:0 0 26px 15px rgba(16,171,102,0.25) inset}
     .hero__feature-number{font-family:"Outfit",sans-serif;font-size:50px;font-weight:500;color:#F6D705}
@@ -215,9 +215,9 @@
   <main>
     <section class="hero">
       <div class="hero__bg"><div class="hero-bg-placeholder"></div></div>
-      <div class="hero__header"><img src="https://hito-kiwa.co.jp/wp-content/themes/hitokiwa/img/common/logo_white.svg" alt="ひときわ" style="height:50px;"></div>
+      <div class="hero__header"><svg viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" style="height:50px;"><text x="0" y="38" font-family="'Noto Sans JP', sans-serif" font-weight="900" font-size="36" fill="#ffffff">ひときわ</text></svg></div>
       <div class="hero__inner">
-        <p class="hero__bg-text u-bg-text">TALENT<br>SOLUTION</p>
+        <p class="hero__bg-text u-bg-text" style="color:rgba(255,255,255,0.08)">TALENT<br>SOLUTION</p>
         <div class="hero__body">
           <h1 class="hero__title"><span class="u-underline">外国人材紹介で</span><br><span class="u-underline">「あらゆる業種」の</span><br><span class="u-underline">人材不足課題を解決</span></h1>
           <p class="hero__subtitle">Recruitment and introduction of foreign workers.</p>
@@ -498,7 +498,7 @@
   </main>
 
   <footer class="footer">
-    <div style="margin-bottom:10px;"><img src="https://hito-kiwa.co.jp/wp-content/themes/hitokiwa/img/common/logo_white.svg" alt="ひときわ" style="height:35px;"></div>
+    <div style="margin-bottom:10px;"><svg viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" style="height:35px;"><text x="0" y="38" font-family="'Noto Sans JP', sans-serif" font-weight="900" font-size="36" fill="#ffffff">ひときわ</text></svg></div>
     <p class="footer__copyright">©2025 株式会社ひときわ</p>
   </footer>
 
